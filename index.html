@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew Dokin — Signal Lab</title>
+    <meta name="description" content="Andrew Dokin — interactive modular synth and Super 8 camera study." />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas id="scene" aria-label="3D-камера следит за курсором"></canvas>
+
+    <div class="crt-phosphor" aria-hidden="true"></div>
+    <div class="crt-roll" aria-hidden="true"></div>
+    <div class="crt-scanlines" aria-hidden="true"></div>
+    <div class="crt-vignette" aria-hidden="true"></div>
+    <div class="crt-noise" aria-hidden="true"></div>
+
+    <aside id="synth" aria-label="Модульный синтезатор"></aside>
+    <div class="camera-section" aria-hidden="true"></div>
+    <div class="frame" aria-hidden="true"></div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
